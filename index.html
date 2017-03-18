@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Train Schedule</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="fluid-container">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="jumbotron text-center">
+                <h1>Train Schedule</h1>
+                
+            </div>
+            <div class="panel panel-default">
+                
+                <div class="panel-heading">Current Train Schedule</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trainTable">
+                           <!--<td id=trainNameData></td>
+                            <td id="destData"></td>
+                            <td id="freqData"></td>
+                            <td id="nextArrivalData"></td>
+                            <td id="minAwayData"></td>-->
+
+                        <!--where the table info is going to go-->
+                    </tbody>
+                </table>
+            </div>
+            <div id="addTrain" class="panel panel-default">
+                
+                <div class="panel-heading">Add Train</div>
+                <form id="myForm" class="col-md-12">
+                    <div class="row col-md-12">
+                        <p>Train Name</p>
+                        <input id="trainName" type="text" placeholder="Enter Train Name here">
+                    </div>
+                    <div class="row col-md-12">
+                        <p>Destination</p>
+                        <input id="dest" type="text" placeholder="Enter the destination">
+                    </div>
+                    <div class="row col-md-12">
+                        <p>First Train Time (hh:mm Military Time)</p>
+                        <input id="firstTrain" type="time" placeholder="(hh:mm military time)">
+                    </div>
+                    <div class="row col-md-12">
+                        <p>Frequency (min)</p>
+                        <input id="freq" type="number" placeholder="Enter the frequency of the train in minutes">
+                    </div>
+                    
+                    <div class="row col-md-2">
+                        <input id="submitButton" type="submit" class="btn btn-info" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-31"></div>
+    </div>
+  
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

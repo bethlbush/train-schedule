@@ -1,0 +1,40 @@
+body{
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.panel-default > .panel-heading{
+	background-color: #1c66e6;
+}
+
+#myForm{
+	padding: 0;
+}
+
+#myForm input{
+  	padding: 8px 8px 8px 8px;
+  	width: 100%;
+  	font-size: 14px;
+  	color: #595959;
+}
+
+#myForm div{
+	margin: 1% 0 1% 0;
+	padding: 0;
+}
+
+#myForm p{
+	margin-bottom: 5px;
+}
+
+#submitButton{
+	color: white;
+	text-decoration-color: white;
+}
+
+td, th{
+	text-align: center;
+}
+
+p{
+	padding-left: 10px
+}
